@@ -13,7 +13,7 @@ let package = Package(
             targets: ["PianoComposer"])
     ],
     dependencies: [
-        .package(name: "FBSDKLoginKit", url: "https://github.com/facebook/facebook-ios-sdk", .upToNextMajor(from: "5.10.0"))
+        .package(name: "Facebook", url: "https://github.com/facebook/facebook-ios-sdk", .upToNextMajor(from: "5.10.0"))
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
@@ -21,14 +21,13 @@ let package = Package(
         .target(
             name: "PianoComposer",
             dependencies: [
-                .product(name: "Facebook", package: "FBSDKLoginKit"),
+                .product(name: "Facebook", package: "Facebook"),
             ],
             path: "Sources",
             linkerSettings: [
                 .linkedFramework("UIKit", .when(platforms: [.iOS])),
                 .linkedFramework("WebKit", .when(platforms: [.iOS])),
-                .linkedFramework("FBSDKCoreKit", .when(platforms: [.iOS])),
-                .linkedFramework("FBSDKLoginKit", .when(platforms: [.iOS]))
+                .linkedFramework("Facebook", .when(platforms: [.iOS]))
             ])
 
         //.testTarget(
