@@ -21,7 +21,7 @@ let package = Package(
         .target(
             name: "PianoComposer",
             dependencies: [
-                .product(name: "Facebook", package: "Facebook"),
+                .product(name: "FBSDKLoginKit", package: "FBSDKLoginKit"),
             ],
             path: "Sources",
             linkerSettings: [
