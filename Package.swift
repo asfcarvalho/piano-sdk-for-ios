@@ -13,7 +13,7 @@ let package = Package(
             targets: ["PianoComposer"])
     ],
     dependencies: [
-        .package(name: "FBSDKLoginKit", url: "https://github.com/facebook/facebook-ios-sdk.git", .upToNextMajor(from: "9.0"))
+        .package(name: "Facebook", url: "https://github.com/facebook/facebook-ios-sdk.git", .upToNextMajor(from: "9.0"))
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
