@@ -20,7 +20,7 @@ let package = Package(
         .target(
             name: "PianoComposer",
             dependencies: [
-                .package(name: "Facebook", url: "https://github.com/facebook/facebook-ios-sdk.git", .upToNextMajor(from: "5.10.0"))
+                //.package(name: "Facebook", url: "https://github.com/facebook/facebook-ios-sdk.git", .upToNextMajor(from: "5.10.0"))
             ],
             path: "Sources",
             linkerSettings: [
