@@ -21,7 +21,11 @@ let package = Package(
             name: "PianoComposer",
             dependencies: [
             ],
-            path: "Sources")
+            path: "Sources",
+            linkerSettings: [
+                .linkedFramework("UIKit", .when(platforms: [.iOS])),
+                .linkedFramework("WebKit", .when(platforms: [.iOS]))
+            ])
 
         //.testTarget(
           //  name: "MySPMTests",
