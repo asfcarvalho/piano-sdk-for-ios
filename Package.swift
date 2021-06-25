@@ -21,7 +21,7 @@ let package = Package(
             name: "PianoComposer",
             dependencies: [
             ],
-            path: "Sources/Composer/Composer")
+            path: "Sources")
 
         //.testTarget(
           //  name: "MySPMTests",
