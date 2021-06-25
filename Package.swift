@@ -24,7 +24,7 @@ let package = Package(
                 //.product(name: "FBSDKLoginKit", package: "Facebook"),
                 //.product(name: "FBSDKCoreKit", package: "Facebook"),
             ],
-            path: "Sources",
+            path: "Sources/Composer",
             linkerSettings: [
                 .linkedFramework("UIKit", .when(platforms: [.iOS])),
                 .linkedFramework("WebKit", .when(platforms: [.iOS]))
