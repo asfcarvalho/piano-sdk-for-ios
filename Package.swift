@@ -21,13 +21,13 @@ let package = Package(
         .target(
             name: "PianoComposer",
             dependencies: [
-                .product(name: "Facebook", package: "Facebook"),
+                .product(name: "FBSDKLoginKit", package: "Facebook"),
+                .product(name: "FBSDKCoreKit", package: "Facebook"),
             ],
             path: "Sources",
             linkerSettings: [
                 .linkedFramework("UIKit", .when(platforms: [.iOS])),
-                .linkedFramework("WebKit", .when(platforms: [.iOS])),
-                .linkedFramework("Facebook", .when(platforms: [.iOS]))
+                .linkedFramework("WebKit", .when(platforms: [.iOS]))
             ])
 
         //.testTarget(
