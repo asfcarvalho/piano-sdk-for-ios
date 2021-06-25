@@ -21,6 +21,7 @@ let package = Package(
         .target(
             name: "PianoComposer",
             dependencies: [
+                .product(name: "Facebook", package: "Facebook"),
             ],
             path: "Sources",
             linkerSettings: [
