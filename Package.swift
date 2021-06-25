@@ -24,7 +24,9 @@ let package = Package(
             path: "Sources",
             linkerSettings: [
                 .linkedFramework("UIKit", .when(platforms: [.iOS])),
-                .linkedFramework("WebKit", .when(platforms: [.iOS]))
+                .linkedFramework("WebKit", .when(platforms: [.iOS])),
+                .linkedFramework("FBSDKCoreKit", .when(platforms: [.iOS])),
+                .linkedFramework("FBSDKLoginKit", .when(platforms: [.iOS]))
             ])
 
         //.testTarget(
